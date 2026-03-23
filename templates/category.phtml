@@ -1,0 +1,14 @@
+
+<main>
+    <h1>Liste des catégories</h1>
+
+    <ul>
+        <?php foreach ($data["categories"] as $category): ?>
+            <li>
+                <h2><?= htmlspecialchars($category->getTitle()) ?></h2>
+                <p><?= htmlspecialchars($category->getDescription()) ?></p>
+            </li>
+        <?php endforeach; ?>
+    </ul>
+
+</main>
